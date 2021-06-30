@@ -1,0 +1,340 @@
+.contacts {
+    padding-top: 52px;
+    padding-bottom: 124px;
+}
+
+.content {
+    position: relative;
+    border-top: 1px solid #cacaca;
+}
+
+.contacts__left {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    padding-left: 4px;
+}
+
+.contacts__point {
+    margin: 0;
+    padding-top: 118px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.contacts__adress {
+    font-style: normal;
+}
+
+.contacts__callback {
+    padding-top: 42px;
+    margin-bottom: 19px;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.contacts__form {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+}
+
+.name,
+.phone {
+    padding: 10px 24px;
+    border: 1px solid #333333;
+    border-radius: 100px;
+    width: 77%;
+    margin-bottom: 23px;
+    transition: background-color .4s ease;
+}
+
+.js-validate-error-label {
+    position: absolute;
+    top: 24%;
+    left: 7%;
+    font-size: 14px;
+}
+
+.js-validate-error-label:last-child {
+    top: -10%;
+}
+
+.name:hover,
+.phone:hover,
+.name:focus,
+.phone:focus {
+    background-color: #eaeaea;
+    outline: none;
+}
+
+.btn__subm {
+    max-width: 157px;
+    padding: 15px 35px;
+    border: 1px solid var(--main-color);
+    border-radius: 100px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: var(--main-color);
+    transition: background-color, color .4s ease;
+}
+
+.btn__subm:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.btn__subm:focus,
+.btn__subm:active {
+    outline: none;
+    border-color: black;
+    color: black;
+}
+
+.contacts__social {
+    padding-top: 39px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+}
+
+.contacts__links:first-child {
+    margin-right: 15px;
+}
+
+.contacts__links-whatsUp,
+.contacts__links-telegramm {
+    width: 40px;
+    height: 40px;
+    transition: opacity .4s ease;
+}
+
+.contacts__links:focus,
+.contacts__links:focus,
+.contacts__links-whatsUp:hover,
+.contacts__links-telegramm:hover {
+    opacity: 0.6;
+    outline: none;
+}
+
+.map {
+    width: 60%;
+    min-height: 694px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -1px;
+    z-index: 2;
+    border-left: 1px solid #cacaca;
+}
+
+.map2 {
+    display: none;
+}
+
+[class*="ground-pane"] {
+    filter: grayscale(1);
+}
+
+.footer {
+    width: 100%;
+    background-color: black;
+    padding-top: 49px;
+    padding-bottom: 40px;
+}
+
+.footer__both {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__social {
+    display: flex;
+}
+
+.footer__link path {
+    transition: fill .4s ease;
+}
+
+.footer__link:hover path,
+.footer__link:focus path {
+    fill: white;
+}
+
+.footer__link:active path {
+    fill: var(--main-color);
+}
+
+.footer__item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.footer__link-vk,
+.footer__link-inst,
+.footer__link-fb {
+    width: 46px;
+    height: 46px;
+}
+
+@media screen and (max-width: 1500px) {
+    .contacts {
+        padding-top: 30px;
+        padding-bottom: 103px;
+    }
+    .contacts__left {
+        width: 56%;
+    }
+    .contacts__point {
+        padding-top: 122px;
+    }
+    .name,
+    .phone {
+        width: 65%;
+    }
+    .contacts__links:first-child {
+        margin-right: 25px;
+    }
+    .contacts__links-whatsUp,
+    .contacts__links-telegramm {
+        width: 60px;
+        height: 60px;
+    }
+    .map {
+        width: 53%;
+        /* min-height: 742px; */
+    }
+    .footer {
+        padding-top: 41px;
+    }
+    .footer .container {
+        padding-left: 51px;
+        padding-right: 51px;
+    }
+    .footer__img {
+        padding-top: 10px;
+    }
+    .footer__item:not(:last-child) {
+        margin-right: 30px;
+    }
+    .footer__link-vk,
+    .footer__link-inst,
+    .footer__link-fb {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .contacts {
+        padding-top: 8px;
+    }
+    .name,
+    .phone {
+        width: 88%;
+    }
+    .map {
+        width: 44%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .contacts__container {
+        flex-direction: column;
+    }
+    .contacts__point {
+        padding-top: 22px;
+    }
+    .map {
+        min-height: 640px;
+    }
+    .name,
+    .phone {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contacts {
+        padding-top: 35px;
+        padding-bottom: 28px;
+    }
+    .contacts__name {
+        margin-bottom: 13px;
+    }
+    .contacts__left {
+        min-width: fit-content;
+        width: 100%;
+        padding-left: 0;
+    }
+    .contacts__point {
+        padding-top: 0;
+        margin-bottom: 0;
+        font-size: 18px;
+    }
+    .contacts__adress {
+        font-size: 13px;
+        margin-bottom: 16px;
+    }
+    .map {
+        width: 100%;
+        min-height: 320px;
+        padding: 0;
+        top: 60px;
+    }
+    .contacts__callback {
+        padding-top: 349px;
+        margin-bottom: 24px;
+        font-size: 18px;
+    }
+    .name,
+    .phone {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .btn__subm {
+        max-width: 130px;
+        padding: 7px 30px;
+        font-size: 12px;
+    }
+    .contacts__social {
+        padding-top: 19px;
+        margin-bottom: 7px;
+        font-size: 18px;
+    }
+    .contacts__links:first-child {
+        margin-right: 16px;
+        padding-left: 2px;
+    }
+    .contacts__links-whatsUp,
+    .contacts__links-telegramm {
+        width: 50px;
+        height: 50px;
+    }
+    .footer {
+        padding-top: 20px;
+        padding-bottom: 18px;
+    }
+    .footer__both {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .footer__link-vk,
+    .footer__link-inst,
+    .footer__link-fb {
+        width: 50px;
+        height: 50px;
+    }
+    .footer__img {
+        width: 98px;
+    }
+    .footer__right {
+        margin-bottom: 8px;
+    }
+}
