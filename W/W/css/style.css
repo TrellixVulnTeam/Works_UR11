@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Uchen-Regular";
+  font-display: swap;
+  src: url("../fonts/Uchen-Regular.woff") format("woff"), url("../fonts/Uchen-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ZenLoop";
+  font-display: swap;
+  src: url("../fonts/ZenLoop-Regular.woff") format("woff"), url("../fonts/ZenLoop-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ZenLoop";
+  font-display: swap;
+  src: url("../fonts/ZenLoop-Italic.woff") format("woff"), url("../fonts/ZenLoop-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ZenTokyoZoo-Regular";
+  font-display: swap;
+  src: url("../fonts/ZenTokyoZoo-Regular.woff") format("woff"), url("../fonts/ZenTokyoZoo-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-size: 14px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+h1 {
+  color: red;
+  font-size: 20px;
+}
+
+@media (max-width: 750px) {
+  h1 {
+    font-size: 15px;
+    color: blue;
+  }
+}
