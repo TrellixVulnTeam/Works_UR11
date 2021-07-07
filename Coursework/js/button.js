@@ -10,12 +10,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
     //кнопка показа ВСЕ
 
-    let catList = document.querySelector('.editions__subname');
+    let catList = document.querySelector('.editions__subname'); // клик по названию списка
 
     catList.addEventListener('click', function(event) {
-        let c = document.querySelectorAll('.editions__check');
+        let c = document.querySelectorAll('.editions__check'); // выбирает все label в списке
         c.forEach(function(item) {
-            item.classList.toggle("editions__hidden");
+            item.classList.toggle("editions__hidden"); //скрывает/открывает
+            if (item.querySelector(".editions__checkitem").checked) // если инпут checked то не скрывает его
+                item.classList.remove("editions__hidden");
         })
     })
 

@@ -432,10 +432,26 @@
     .editions__hidden {
         display: none;
     }
+    .editions__check:nth-child(-n+8) {
+        margin-right: 0;
+    }
     .editions__check.editions__unhidden {
         position: relative;
         display: block;
         border-bottom: 1px solid white;
+    }
+    .editions__check::after {
+        content: '';
+        display: block;
+        width: 10%;
+        height: 20px;
+        background-image: url(../img/cross.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        right: 0;
+        top: 0;
+        opacity: 0;
     }
     .editions__subname {
         cursor: pointer;
