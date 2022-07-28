@@ -1,0 +1,37 @@
+.aboutUs {
+    padding-top: 90px;
+    padding-bottom: 72px;
+}
+
+.aboutUs__text {
+    max-width: 1080px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+@media screen and (max-width: 1500px) {
+    .aboutUs {
+        padding-bottom: 68px;
+    }
+    .aboutUs__text {
+        padding-top: 2px;
+        padding-left: 5px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .aboutUs {
+        padding-top: 56px;
+        padding-bottom: 42px;
+    }
+    .aboutUs__name {
+        margin-bottom: 15px;
+    }
+    .aboutUs__text {
+        padding: 0;
+        font-size: 14px;
+        line-height: 28px;
+    }
+}
