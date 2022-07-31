@@ -13,4 +13,4 @@ By clicking on the transaction chart, you can get to the detailed account histor
 
 
 ## Used to create:
-## RE:DOM library, native JS, Chart.JS library, Webpack, CyPress library (for e2e tests)
+RE:DOM library, native JS, Chart.JS library, Webpack, CyPress library (for e2e tests)
